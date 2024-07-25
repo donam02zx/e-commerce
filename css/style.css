@@ -1,0 +1,608 @@
+/* 
+    Author: Vijay Thapa;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-both{
+    margin-top: 85.25px;
+}
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: #d63031;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 3px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.error{
+    padding: 2%;
+    color: red;
+}
+
+.success{
+    padding: 2%;
+    color: green;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/comi-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------ */
+.header-nav{
+    top: 0;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+.container_content-text{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container-topic{
+    margin-top: 24px;
+}
+
+.container_topic-text{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.header-contact{
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.container-contact{
+    background-color: #CC0000;
+    height: 34px;
+    width: 170px;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+.contact-text{
+    justify-content: center;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    color: #fff;
+}
+
+.contact-face{
+    display: flex;
+    background-color: #0984e3;
+    height: 34px;
+    width: 170px;
+    border-radius: 22px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.contact-face > i{
+    color: snow;
+}
+
+.face-text{
+    padding-left: 4px;
+    justify-content: center;
+    /* margin: 0 auto; */
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    color: #fff;
+}
+
+                                            /* List product price */
+.price-list{
+    display: flex;
+    margin: 20px 34px;
+}
+
+
+.img_price{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    height: 400px;
+    width: 300px;
+}
+
+.price_list-detail{
+    padding-left: 46px;
+}
+
+
+.detail-text--header{
+    color: #d63031;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.body-detail{
+    padding-left: 44px;
+}
+
+.detail-text--body{
+    margin: 26px 0;
+    font-size: 16px;
+    color: #A6A3A8;
+}
+
+.detail-price{
+    font-weight: 600;
+    color: red !important;
+}
+
+.footer-detail{
+    font-size: 16px;
+}
+
+
+.footer-order{
+    margin-top: 46px;
+    display: flex;
+}
+
+.order-text{
+    color: #fff;
+}
+
+.order-link{
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    background-color: #CC0000;
+    width: 190px;
+    height: 56px;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+                                                    /* Certificate */
+.img-new{
+    height: 350px;
+    width: 290px;
+}
+
+.text-red{
+    color: #CC0000;
+}
+
+.text-black{
+    color: #000;
+}
+
+.social{
+    background-color: #ff7675;
+}
+
+li>a{
+    font-size: 14px;
+}
+
+.telephone{
+    display: flex;
+    position: fixed;
+    top: 528px;
+    right: 50px;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background-color: #ffb43a;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 0 0 rgb(255, 180, 58, 0.7);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgb(255, 193, 7, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 rgb(255, 193, 7, 0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+.tel-link{
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: center;
+    color: #fff;
+}
+
+.tel-text{
+    text-align: center;
+    font-size: 14px;
+    padding: 0 2px;
+}
+
+.tel-icon{
+    padding: 0 2px;
+}
+
+.modal{
+    /* position: fixed; */
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal.open{
+    display: flex;
+}
+
+/* .modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+} */
+
+.modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    height: 60px;
+    width: 400px;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    animation: growth linear 0.1s;
+}
+
+.phone-text{
+    /* color: #f368e0; */
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button-phone{
+    display: flex;
+    justify-content: space-around;
+    margin: 6px 0;
+}
+
+.call{
+    background-color: #1dd1a1;
+}
+
+.cancel{
+    background-color: #48dbfb;
+}
+
+.phone-call{
+    width: 80px;
+}
+
+.phone-cancel{
+    width: 80px;
+}
+
+.phone-call--text{
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media (max-width:740px){
+    .logo{
+        width: 10%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 24% 0;
+        width: 181%;
+    }
+
+    .text-center{
+
+    }
+
+    .price-list{
+        width: 100%;
+    }
+
+    .price_list-img{
+        width: 100%;
+    }
+
+    .img_price{
+        height: 60%;
+        width: 200%;
+    }
+
+    .price_list-detail{
+        margin-left: 15%;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+
+/* Mobile */
+/* @media (max-width: 740px){
+    .menu ul li{
+        display: block;
+    }
+} */
